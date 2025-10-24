@@ -7,21 +7,105 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Shaheer Ahmad</h1>
-        <p>Computer Science | AI Engineer</p>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="assets/images/profile_picture.jpeg" alt="Shaheer Ahmad" class="hero-img">
+            <h1>Shaheer Ahmad</h1>
+            <p class="subtitle">AI Engineer | Deep Learning | Voice AI</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <img src="assets/images/profile.jpg" alt="Shaheer Ahmad" class="profile-img">
-        <p>BS Computer Science student at LUMS. Foundational Engineer at Uplift AI (YC S25), building voice AI solutions for regional languages across Pakistan.</p>
+        <p>I'm a Computer Science student at LUMS and Foundational Engineer at Uplift AI (YC S25), where I architect voice AI solutions serving 50,000+ daily users across Pakistan in regional languages. My passion lies in building production-grade ML systems that deliver real social impact—from enabling Khan Academy to produce 500 educational videos in one week to helping 10,000+ low-literacy farmers diagnose crop diseases through AI-powered WhatsApp assistants. I specialize in end-to-end ML pipelines, from dataset curation and model training to scalable deployment on AWS infrastructure.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-card">
+            <h3><a href="https://www.upliftai.com" target="_blank">Orator Voice AI Suite</a></h3>
+            <p class="project-role">Foundational Engineer @ Uplift AI (YC S25)</p>
+            <p>Led development of production TTS system for Urdu, Balochi, and Sindhi, serving 50,000+ daily users. Architected end-to-end ML pipeline (400+ hours audio curation, model training, API deployment) delivering 60% higher user preference vs. OpenAI/Microsoft at 1/60th the cost. Enabled Khan Academy to produce 500 educational videos in 1 week, impacting 142M+ low-literacy adults.</p>
+            <div class="tech-tags">
+                <span>PyTorch</span>
+                <span>AWS</span>
+                <span>TTS</span>
+                <span>Production ML</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Distributed RAG System (DRAG)</h3>
+            <p>Designed production-grade distributed RAG on AWS using SageMaker, Bedrock, Lambda, and API Gateway. Optimized for high throughput: 1M+ documents, 120,000+ tokens/minute with fault-tolerant autoscaling infrastructure.</p>
+            <div class="tech-tags">
+                <span>AWS</span>
+                <span>LangChain</span>
+                <span>Pinecone</span>
+                <span>CloudFormation</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Hyb-STEX Traffic Prediction</h3>
+            <p>Developed scalable spatio-temporal traffic forecasting system boosting accuracy by 15%. Applied self-supervised and federated learning on large-scale CAREEM datasets. Paper submitted to ACM TKDD.</p>
+            <div class="tech-tags">
+                <span>Graph Neural Networks</span>
+                <span>PyTorch</span>
+                <span>Federated Learning</span>
+            </div>
+            <a href="https://github.com/shaheer_ahmad/DL_project" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">PyTorch</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">LangChain</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">FastAPI</span>
+            <span class="skill-badge">Terraform</span>
+            <span class="skill-badge">Computer Vision</span>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience & Education</h2>
+        
+        <div class="exp-item">
+            <h3>Foundational Engineer</h3>
+            <p class="exp-meta">Uplift AI (YC S25) | June 2025 - Present</p>
+            <p>Leading voice AI innovation for financial inclusion and agricultural accessibility across Pakistan in regional languages.</p>
+        </div>
+
+        <div class="exp-item">
+            <h3>Research Assistant</h3>
+            <p class="exp-meta">LUMS - Center for Urban Informatics | July 2022 - June 2025</p>
+            <p>Developed spatio-temporal traffic prediction systems and applied federated learning techniques on large-scale datasets.</p>
+        </div>
+
+        <div class="exp-item">
+            <h3>BS Computer Science</h3>
+            <p class="exp-meta">Lahore University of Management Sciences | Aug 2021 - Jun 2025</p>
+            <p>Dean's Honor List. Focus: Deep Learning, Computer Vision, ML Systems.</p>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: shaheer.ahmad.work@gmail.com</p>
+        <p>Email: <a href="mailto:shaheer.ahmad.work@gmail.com">shaheer.ahmad.work@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/shaheer-ahmad-deeplearning" target="_blank">linkedin.com/in/shaheer-ahmad-deeplearning</a></p>
+        <p>Phone: +92 316 4351815</p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Shaheer Ahmad. All rights reserved.</p>
+    </footer>
 </body>
 </html>
