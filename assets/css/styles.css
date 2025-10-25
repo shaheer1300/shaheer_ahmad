@@ -25,8 +25,8 @@ body {
 }
 
 .hero-img {
-    width: 220px;
-    height: 220px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #58a6ff;
@@ -58,6 +58,30 @@ body {
 
 .cta-button:hover {
     background-color: #1f6feb;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #58a6ff;
+    border: 2px solid #58a6ff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #58a6ff;
+    color: #ffffff;
 }
 
 /* Sections */
